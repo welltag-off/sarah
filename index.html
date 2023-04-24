@@ -1,32 +1,40 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Joyeux anniversaire Sarah !</title>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Joyeux anniversaire Sarah !</title>
 <meta property="og:type" content="website">
         <meta name="theme-color" content="#D3302C">
         <meta property="og:title" content="Joyeux Anniversaire !">
         <meta property="og:description" content="Joyeux 18eme anniversaire Sarah !">
-    <link rel="stylesheet" href="./style/style.css">
-  </head>
-  <body>
-    <div id="poeme">
-      <h1>Joyeux Anniversaire Sarah</h1>
-      <hr>
-      <div id="paroles" class="hide"></div>
+              <link rel="stylesheet" href="./css/quizz.css">
+</head>
+
+<body>
+  <div class="start-screen">
+    <h1>Petit quizz avant !</h1> 
+    <button id="start-button">Commmencer</button>
+</div>
+<div id="display-container">
+    <div class="header">
+        <div class="number-of-count">
+            <span class="number-of-question">Question 1 sur 3</span>
+        </div>
+        <div class="timer-div">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/stopwatch-icon.png"
+                width="20px" />
+            <span class="time-left">10s</span>
+        </div>
     </div>
-  </div>
-
-  <div class="btn">
-    <button id="lampe">Allumer la lumiere</button>
-    <button id="msc" class="hide">Mettre de l'ambiance</button>
-    <button id="mot" class="hide">Un mot pour toi !</button>
-  </div>  
-
-  <audio id="musique" loop>
-  <source src="./music/spotifydown.com - 4oRrycZX0gXxhuz9elPK6n.mp3" type="audio/mpeg">
-</audio>
-
-    <script src="./script/main.js"></script>
-  </body>
+    <div id="container">
+    </div>
+    <button id="next-button">Suivant</button>
+</div>
+<div class="score-container hide">
+    <div id="user-score">Score</div>
+    <button id="restart">Refaire</button>
+    <button id="continue">Continue</button>
+</div>
+<script src="./js/quizz.js"></script>
+</body>
 </html>
