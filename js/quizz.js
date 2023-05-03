@@ -12,7 +12,7 @@ let startScreen = document.querySelector(".start-screen");
 let startButton = document.getElementById("start-button");
 let questionCount;
 let scoreCount = 0;
-let count = 11;
+let count = 16;
 let countdown;
 
 
